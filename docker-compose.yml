@@ -1,0 +1,22 @@
+services:
+  sesion-anonima:
+    build: .
+    image: glndocker36/juego-anonimo:0.0.10
+    container_name: sesion-anonima-gln
+    ports:
+      - 8089:8089
+    environment:
+      - TZ="America/Bogota"
+    networks:
+      - anonima-net
+    env_file: ./.env  
+#    environment:
+#      SPRING_DATASOURCE_URL: $SPRING_DATASOURCE_URL
+#      SPRING_DATASOURCE_USERNAME: $SPRING_DATASOURCE_USERNAME
+#      SPRING_DATASOURCE_PASSWORD: $SPRING_DATASOURCE_PASSWORD
+#      SPRING_DATASOURCE_DRIVER_CLASS_NAME: $SPRING_DATASOURCE_DRIVER_CLASS_NAME
+
+networks:
+  anonima-net:
+    driver: bridge
+    #external: false
