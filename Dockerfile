@@ -16,4 +16,4 @@ COPY ./src /app/src
 RUN ./mvnw clean install -DskipTests
 
 #Levantar la aplicación cuando el contenedor inicie
-ENTRYPOINT [ "java","-jar","/app/target/SesionAnonima-0.0.10.jar" ]
+ENTRYPOINT [ "java","-jar","/app/target/SesionAnonima-0.0.11.jar" ]

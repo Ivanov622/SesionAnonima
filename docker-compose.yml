@@ -1,7 +1,7 @@
 services:
   sesion-anonima:
     build: .
-    image: glndocker36/juego-anonimo:0.0.10
+    image: glndocker36/juego-anonimo:0.0.11
     container_name: sesion-anonima-gln
     ports:
       - 8089:8089

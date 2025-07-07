@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.codere</groupId>
 	<artifactId>SesionAnonima</artifactId>
-	<version>0.0.10</version>
+	<version>0.0.11</version>
 	<name>SesionAnonima</name>
 	<description>Sesiones Anónimas Codere</description>
 	<url/>
